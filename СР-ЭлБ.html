@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Электронная библиотека</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style>
+      a img{
+        width: 125px;
+        height: 40px;
+      }
+      .carousel-inner img{
+        width: 100%;
+        height: 450px;
+      }
+
+      .wrapper{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          
+      }
+      img{
+          width: 75px;
+          height: 100px;
+        }
+      .col-lg-3{
+        margin: 12px;
+        -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+      }
+      .footer{
+        height: 200px;
+        background-color: gray;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-light navbar-light navbar-expand-sm fixed-top">
+        <a href="" class="navbar-brand"><img src="logo.png" alt="logo"></a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#main-menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Личный кабинет</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  <main>
+    <div class="carousel slide" id="carousel" data-ride="carousel">
+      <ul class="carousel-indicators">
+          <li class="active" data-target="#carousel" data-ride="carousel" data-slide-to="0"></li>
+          <li data-target="#carousel" data-ride="carousel" data-slide-to="1"></li>
+      </ul>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="banner 1.png" alt="slide">
+              <div class="carousel-caption">
+                <h1>Электронная библиотека</h1>
+                <p>Тысячи книг и учебников в одном месте и всегда доступны онлайн</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="banner 2.png" alt="slide">
+              <div class="carousel-caption">
+                  
+              </div>
+          </div>
+      </div>
+      <a href="#carousel" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#carousel" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+      </a>
+  </div>
+  </main>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-lg-3">
+        <img src="pic-01.png" alt="pic-01">
+        <h1>Искуство</h1>
+        <p>Увлекаетесь искусством? для вас создан целый раздел книг,посвящённый данной теме</p>
+      </div>
+      <div class="col-sm-12 col-lg-3">
+        <img src="pic-02.png" alt="pic-02">
+        <h1>Точные науки</h1>
+        <p>Математика,химия,физика ... Весь материал,собран на портале "Электронная библиотека"</p>
+      </div>
+      <div class="col-sm-12 col-lg-3">
+        <img src="pic-03.png" alt="pic-03">
+        <h1>Иллюстрации</h1>
+        <p>Интереcна фотография?Загляните к нам и оцените труды мировых фотографов</p>
+      </div>
+      </div>
+      <div class="row">
+
+      <div class="card col-sm-12 col-lg-2" >
+        <div class="card-body">
+          <img src="book-01.jpg" alt="BOOK" card-img-top />
+          <h4 class="card-title">АЛГЕБРА 7 КЛАСС</h4>
+          <p>Школьные предметы</p>
+        </div>
+      </div>
+      <div class="card col-sm-12 col-lg-2">
+        <div class="card-body " >
+          <img src="book-02.jpg" alt="BOOK" card-img-top />
+          <h4 class="card-title">ВСЕОБЩАЯ ИСТОРИЯ</h4>
+          <p>Школьные предметы</p>
+        </div>
+      </div>
+      <div class="card col-sm-12 col-lg-2">
+        <div class="card-body">
+          <img src="book-03.jpg" alt="BOOK" card-img-top />
+          <h4 class="card-title">ГАРРИ ПОТТЕР</h4>
+          <p>Художественная литература</p>
+        </div>
+      </div>
+      <div class="card col-sm-12 col-lg-2">
+        <div class="card-body">
+          <img src="book-04.jpg" alt="BOOK" card-img-top />
+          <h4 class="card-title">СОЗДАНИЕ ВЕБ-САЙТА</h4>
+          <p>Для чайников</p>
+        </div>
+      </div>
+      <div class="card col-sm-12 col-lg-2">
+        <div class="card-body">
+          <img src="book-05.jpg" alt="BOOK" card-img-top />
+          <h4 class="card-title">АНГЛИЙСКИЙ ЯЗЫК</h4>
+          <p>Справочники</p>
+        </div>
+      </div>
+      <div class="card col-sm-12 col-lg-2">
+        <div class="card-body">
+          <img src="book-06.jpg" alt="BOOK" card-img-top />
+          <h4 class="card-title">РУКОВОДСТВО HTML/CSS</h4>
+          <p>Справочники</p>
+        </div>
+    
+    </div>
+  </div>
+    </div>
+
+
+  <table width="100%">
+    <tr align="center">
+        <p align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2323.7183910234176!2d48.60814621620994!3d54.379624980208696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415d3f1b8b2d409b%3A0x15d5407b8ea01f69!2z0JvRjNCy0L7QstGB0LrQuNC5INCxLdGALCA1LCDQo9C70YzRj9C90L7QstGB0LosINCj0LvRjNGP0L3QvtCy0YHQutCw0Y8g0L7QsdC7LiwgNDMyMDYz!5e0!3m2!1sru!2sru!4v1636894058792!5m2!1sru!2sru" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+    </tr>
+
+  <div class="footer">
+    <div class="footer-text">
+      <h4>Контактная информация</h4><br><p>г.Ульяновск<br>Бульвар Львовский 5</p>
+    </div>
+    <div class="footer-text">
+      <h4>Основное меню</h4><p>Главное<br>Новости<br>Каталог<br>Личный кабинет</p>
+    </div>
+    <div class="footer-text">
+      <h4>Цитаты великих писателей</h4><p>Кто хочет приносить пользу, тот даже со <br> связанными руками,может сделать <br> много добра <br> Ф.Достоевский</p>
+    </div>
+  </div>
+</body>    
+</html>
