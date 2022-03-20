@@ -42,6 +42,20 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
       }
+      .parent:hover .child{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .child{
+        background-color: brown;
+        display: none;
+      }
+      .parent{
+        background-color: white;
+      }
     </style>
 </head>
 <body>
@@ -107,9 +121,15 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-lg-3">
+        <div class="parent">
         <img src="pic-01.png" alt="pic-01">
-        <h1>Искуство</h1>
-        <p>Увлекаетесь искусством? для вас создан целый раздел книг,посвящённый данной теме</p>
+          <h1>Искуство</h1>
+          <p>Увлекаетесь искусством? для вас создан целый раздел книг,посвящённый данной теме</p>
+          <div class="child col-sm-12 col-lg-3">
+            <h1>Искусство</h1>
+            <p>something</p>
+        </div>
+      </div>
       </div>
       <div class="col-sm-12 col-lg-3">
         <img src="pic-02.png" alt="pic-02">
